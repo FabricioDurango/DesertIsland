@@ -36,6 +36,14 @@ public class Playlist {
         desertIslandPlaylist.remove(3);
         desertIslandPlaylist.remove(1);
 
+        int songA = desertIslandPlaylist.indexOf("Manuel Turizo- Besame");
+        int songB = desertIslandPlaylist.indexOf("Enrrique Iglesias- Bailando");
+
+        String tempA = desertIslandPlaylist.get(songA);
+        desertIslandPlaylist.set(songA, desertIslandPlaylist.get(songB));
+        desertIslandPlaylist.set(songB, tempA);
+
+
 
     }
     public void playSongs(){
